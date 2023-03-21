@@ -12,67 +12,107 @@ ul {
 	color: red;
 }
 .left-column {
-	width: 50%;
+	width: 39%;
 	float: left;
 }
 .right-column {
-	width: 50%;
+	width: 39%;
 	float: right;
 }
 h1 {
 	text-align: center;
 }
 </style>
+
 <body>
-<img src="file:adaidien.png" alt="a" style="width:177.5px;height:236.5px;">
+<script>
+var a=0;
+var b=0;
+var c=0;
+var d=0;
+var e=0;
+var f=0;
+function f1() {
+	if (a%2==0) document.getElementById("in4").style.display = "block";
+	else document.getElementById("in4").style.display = "none";
+	a++;
+}
+function f2() {
+	if (b%2==0) document.getElementById("aim").style.display = "block";
+	else document.getElementById("aim").style.display = "none";
+	b++;
+}
+function f3() {
+	if (c%2==0) document.getElementById("act").style.display = "block";
+	else document.getElementById("act").style.display = "none";
+	c++;
+}
+function f4() {
+	if (d%2==0) document.getElementById("AC").style.display = "block";
+	else document.getElementById("AC").style.display = "none";
+	d++;
+}
+function f5() {
+	if (e%2==0) document.getElementById("skill").style.display = "block";
+	else document.getElementById("skill").style.display = "none";
+	e++;
+}
+function f6() {
+	if (f%2==0) document.getElementById("view").style.display = "block";
+	else document.getElementById("view").style.display = "none";
+	f++;
+}
+</script>
+
+<img src="file:///C:/Users/DELL/Desktop/web/img/adaidien.png" alt="a" style="width:177.5px;height:236.5px;">
 <h1> Hoàng Lâm Tùng (Tunggg)</h1>
 
 <div class="left-column">
-<h2> Thông tin cá nhân </h2>
-<p><ul>
+<h2> Thông tin cá nhân <button onclick="f1()">show/hide</button></h2>
+<ul hidden id="in4">
 <li> DOB: 26/11/2006 </li>
 <li> School: THPT Chuyên KHTN </li>
 <li> Tel: 0963261106
 <li> Nick codeforces: <a href="https://codeforces.com/profile/Tunggg"> Click here </a> </li>
 <li> Facebook acc: <a href="https://www.facebook.com/hoanglam.tung.26.39"> Click here </a> </li>
-</ul></p>
+</ul>
 
-<h2> Mục tiêu: </h2>
-<p><ul>
+<h2> Mục tiêu: <button onclick="f2()">show/hide</button></h2>
+<ul hidden id="aim">
 <li> 2023: có IELTS 7.0 hoặc hơn </li>
 <li> 2024-2027: học đại học </li>
 <li> 2027-inf: đi làm </li>
-</ul></p>
+</ul>
 
-<h2> Các hoạt động đã tham gia </h2>
-<p><ul>
+<h2> Các hoạt động đã tham gia <button onclick="f3()">show/hide</button></h2>
+<ul hidden id="act">
 <li> Tham gia HCC (HSGS Code Camp) với vai trò là Supporter </li>
 <li> Tham gia Hackerthon (2048 và AI) </li>
-</ul></p>
+</ul>
 </div>
 
 <div class="right-column">
-<h2> Achievement: </h2>
-<p><ul>
+<h2> Achievement: <button onclick="f4()">show/hide</button></h2>
+<ul hidden id="AC">
 <li> 2020: Nhì HSG Toán quận Cầu Giấy
 <li> 2021: Đỗ 3 trường chuyên (Chuyên Toán KHTN, Ams và chuyên Tin CSP) </li>
 <li> 2022: top 18 trong 35 thi tuyển </li>
-</ul></p>
+</ul>
 
-<h2> Skills: </h2>
-<p><ul>
+<h2> Skills: <button onclick="f5()">show/hide</button></h2>
+<ul hidden id="skill">
 <li> Đánh máy được 10 ngón </li>
 <li> Nhiệt tình trong công việc, dễ thích nghi với môi trường mới </li>
 <li> Thành thạo sử dụng word, powerpoint </li>
 <li> Debug
-</ul></p>
+</ul>
 
-<h2> Quan điểm cá nhân: </h2>
-<p><ul>
+<h2> Quan điểm cá nhân: <button onclick="f6()">show/hide</button></h2>
+<ul hidden id="view">
 <li> Có hứng thú về tin học </li>
 <li> Làm việc hết mình, muốn có được một môi trường cạnh tranh lành mạnh </li>
 <li> Muốn có cơ hội thăng tiến </li>
-</ul></p>
+</ul>
 </div>
 
 </body>
